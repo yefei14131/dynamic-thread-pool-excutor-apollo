@@ -12,9 +12,12 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 集成apollo请参考官方文档 https://github.com/ctripcorp/apollo
+ * 在apollo后台创建namespace： qa.thread
+ * 在apollo后台创建配置项：demoExecutorBeanName.threadPool.corePoolSize
+ * 在apollo后台创建配置项：demoExecutorBeanName.threadPool.maxPoolSize
+ * 在apollo后台创建配置项：demoExecutorBeanName.threadPool.maxQueueSize
  *
- *
- *
+ * demoExecutorBeanName 根据项目的实际的beanName配置，其他必须固定不变
  */
 
 /**
