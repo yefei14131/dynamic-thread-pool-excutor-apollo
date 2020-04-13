@@ -30,7 +30,7 @@ public class ApolloChangeListener {
 
     private List<ChangedThreadPoolExecutor> empty = new ArrayList<>();
 
-    @ApolloConfigChangeListener("qa.thread")
+    @ApolloConfigChangeListener("dynamic.thread")
     public synchronized void threadListener(ConfigChangeEvent changeEvent) {
         log.info("changeEvent: {}", changeEvent.changedKeys());
         try {

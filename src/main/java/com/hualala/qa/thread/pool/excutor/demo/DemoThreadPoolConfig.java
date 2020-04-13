@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 集成apollo请参考官方文档 https://github.com/ctripcorp/apollo
- * 在apollo后台创建namespace： qa.thread
+ * 在apollo后台创建namespace： dynamic.thread
  * 在apollo后台创建配置项：demoExecutorBeanName.threadPool.corePoolSize
  * 在apollo后台创建配置项：demoExecutorBeanName.threadPool.maxPoolSize
  * 在apollo后台创建配置项：demoExecutorBeanName.threadPool.maxQueueSize
@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
  *
  */
 //@Configuration  // 实际使用时放开此行注释
-//@EnableApolloConfig("qa.thread")  // 实际使用时放开此行注释。必须使用"qa.thread"这个namespace，因为 changeListener监听的是这个namespace
+//@EnableApolloConfig("dynamic.thread")  // 实际使用时放开此行注释。必须使用"dynamic.thread"这个namespace，因为 changeListener监听的是这个namespace
 public class DemoThreadPoolConfig {
 
 
