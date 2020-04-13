@@ -18,7 +18,15 @@ threadPoolExecutor.setMaximumPoolSize(maxPoolSize);
 	 - demoExecutorBeanName.threadPool.maxPoolSize。最大线程数。固定以“.threadPool.maxPoolSize”结尾、${demoExecutorBeanName}开头，且中间不能包含其他字符。
 	 - demoExecutorBeanName.threadPool.maxQueueSize。核心线程数。固定以“.threadPool.maxQueueSize”结尾、${demoExecutorBeanName}开头，且中间不能包含其他字符。
 3. 业务代码里集成Apollo，参考官方文档：https://github.com/ctripcorp/apollo
-4. 业务代码里创建线程池实例。
+4. 业务代码里添加maven依赖
+```Xml
+<dependency>
+	<groupId>com.hualala.qa</groupId>
+	<artifactId>dynamic.thread.pool.excutor</artifactId>
+	<version>1.0-SNAPSHOT</version>
+</dependency>
+```
+5. 业务代码里创建线程池实例。
 ```Java
 @Configuration
 @EnableApolloConfig("dynamic.thread")
